@@ -1,21 +1,11 @@
-.App {
+.App { 
+  background: radial-gradient(ellipse at bottom, #243547 75%, #090a0f 100%);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+.App-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +18,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.App-stars {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  animation: animStar 60s linear infinite;
+}
+
+@keyframes animStar {
   from {
-    transform: rotate(0deg);
+    transform: translateY(0px);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(-100vh);
   }
 }
