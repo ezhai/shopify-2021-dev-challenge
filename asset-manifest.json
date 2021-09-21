@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/shopify-2021-dev-challenge/static/css/main.2594fd80.chunk.css",
-    "main.js": "/shopify-2021-dev-challenge/static/js/main.90b603b8.chunk.js",
-    "main.js.map": "/shopify-2021-dev-challenge/static/js/main.90b603b8.chunk.js.map",
+    "main.css": "/shopify-2021-dev-challenge/static/css/main.8705890c.chunk.css",
+    "main.js": "/shopify-2021-dev-challenge/static/js/main.34662a70.chunk.js",
+    "main.js.map": "/shopify-2021-dev-challenge/static/js/main.34662a70.chunk.js.map",
     "runtime-main.js": "/shopify-2021-dev-challenge/static/js/runtime-main.42f0d147.js",
     "runtime-main.js.map": "/shopify-2021-dev-challenge/static/js/runtime-main.42f0d147.js.map",
-    "static/js/2.4ac0021c.chunk.js": "/shopify-2021-dev-challenge/static/js/2.4ac0021c.chunk.js",
-    "static/js/2.4ac0021c.chunk.js.map": "/shopify-2021-dev-challenge/static/js/2.4ac0021c.chunk.js.map",
+    "static/js/2.c280d5ab.chunk.js": "/shopify-2021-dev-challenge/static/js/2.c280d5ab.chunk.js",
+    "static/js/2.c280d5ab.chunk.js.map": "/shopify-2021-dev-challenge/static/js/2.c280d5ab.chunk.js.map",
     "index.html": "/shopify-2021-dev-challenge/index.html",
-    "static/css/main.2594fd80.chunk.css.map": "/shopify-2021-dev-challenge/static/css/main.2594fd80.chunk.css.map",
-    "static/js/2.4ac0021c.chunk.js.LICENSE.txt": "/shopify-2021-dev-challenge/static/js/2.4ac0021c.chunk.js.LICENSE.txt",
+    "static/css/main.8705890c.chunk.css.map": "/shopify-2021-dev-challenge/static/css/main.8705890c.chunk.css.map",
+    "static/js/2.c280d5ab.chunk.js.LICENSE.txt": "/shopify-2021-dev-challenge/static/js/2.c280d5ab.chunk.js.LICENSE.txt",
     "static/media/loading.7feeb284.gif": "/shopify-2021-dev-challenge/static/media/loading.7feeb284.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.42f0d147.js",
-    "static/js/2.4ac0021c.chunk.js",
-    "static/css/main.2594fd80.chunk.css",
-    "static/js/main.90b603b8.chunk.js"
+    "static/js/2.c280d5ab.chunk.js",
+    "static/css/main.8705890c.chunk.css",
+    "static/js/main.34662a70.chunk.js"
   ]
 }
