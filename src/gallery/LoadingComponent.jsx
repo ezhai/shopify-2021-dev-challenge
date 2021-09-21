@@ -28,14 +28,14 @@ const LoadingText = styled(Typography)`
 
 const LoadingImage = styled.img`
   padding: 20px;
-  height: 50vmin;
-  width: 50vmin;
+  height: 20vmin;
+  width: 20vmin;
 `;
 
 const Loading = () => (
   <LoadingContainer>
-    <LoadingText variant="h4">Loading images</LoadingText>
     <LoadingImage src={loading} alt="loading spinner" />
+    <LoadingText variant="h4">loading images</LoadingText>
   </LoadingContainer>
 );
 

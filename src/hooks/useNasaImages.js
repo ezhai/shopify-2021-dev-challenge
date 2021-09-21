@@ -11,6 +11,7 @@ const IMAGE_SET_SIZE = 16;
 
 /**
  * Retrieves image metadata from local storage.
+ *
  * @returns a map from image date to image metadata.
  */
 const getImageMetadata = () => {
@@ -25,6 +26,7 @@ const getImageMetadata = () => {
 
 /**
  * Queries items from NASA's Astronomy Picture of the Day API.
+ *
  * @returns list of items that were queried.
  */
 const queryNasa = async (startDate, endDate, retries = MAX_RETRIES) => {
@@ -68,6 +70,11 @@ const queryNasa = async (startDate, endDate, retries = MAX_RETRIES) => {
  */
 const toNasaDate = (date) => date.toISOString().split('T')[0];
 
+/**
+ * Hook to query images from a NASA API, store them client-side, and update them.
+ *
+ * @returns the images, a callback to update the images, and the query state
+ */
 const useNasaImages = () => {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -93,7 +100,7 @@ const useNasaImages = () => {
     const queriedImages = await queryNasa(startDateString, endDateString);
     const allImages = [...images, ...queriedImages].sort((a, b) => b.date.localeCompare(a.date));
 
-    // set the endDate to be the first image in the next wet
+    // set the endDate to be the first image in the next set
     endDate.current = startDate;
     endDate.current.setDate(endDate.current.getDate() - 1);
 
@@ -103,7 +110,7 @@ const useNasaImages = () => {
   }, [images, isLoading]);
 
   /**
-   * Query the first set of images on mount.
+   * Query the first set of images on component mount.
    */
   useEffect(() => {
     loadImages();
